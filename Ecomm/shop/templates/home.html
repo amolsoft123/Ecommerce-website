@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ <!--Body-->
+
+ <div class="container-fluid mt-5">
+  <div class="row mx-auto">
+    {% for p in prod %}
+    <div class="card mx-auto mb-3" style="width: 18rem;">
+      <img src="{{p.image.url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{p.product_name}}</h5>
+        <p class="card-text">{{p.size}}</p>
+        <p class="card-text">{{p.price}}</p>
+        <button class="btn btn-success text-white">
+          <i class="bi bi-hand-thumbs-up-fill"></i>
+        </button>      
+          <a href="" class="btn btn-danger">Add to Cart</a>
+      </div>
+  </div>
+  {% endfor %}
+  </div>
+
+</div>
+<!--Body-->
+            
+{%  endblock  %}

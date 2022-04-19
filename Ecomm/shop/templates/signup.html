@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row shadow mt-5 mb-5">
+
+        <div class="col-lg-6  p-4">
+            <h3 class="mb-5">Register</h3>
+
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+              </form>
+
+        </div>
+
+        <div class="col-lg-6">
+            <img src="https://st2.depositphotos.com/1607243/12178/i/950/depositphotos_121789602-stock-photo-online-shop-on-computer-screen.jpg" class="img-fluid img-responsive" alt="" srcset="">
+        </div>
+
+    </div>
+</div>
+
+{%  endblock  %}

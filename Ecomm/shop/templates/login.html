@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row shadow mt-5 mb-5">
+
+        <div class="col-lg-6  p-4">
+            <h3 class="mb-5">Login</h3>
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="username" class="form-label">User Name</label>
+                    <input type="text" name="username" class="form-control" id="username">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                
+                  <button type="submit" value="Login" class="btn btn-primary">Login</button>  
+                           
+              </form>
+
+        </div>
+
+        <div class="col-lg-6">
+            <img src="https://media.istockphoto.com/photos/woman-using-access-window-to-log-in-entering-password-on-laptop-sign-picture-id1322595946?b=1&k=20&m=1322595946&s=170667a&w=0&h=37m0-fLJUHJkI8V2mFJYslTVwP7vKogqeuWdp0d6rXk=" class="img-fluid img-responsive" alt="" srcset="">
+        </div>
+
+    </div>
+</div>
+
+{%  endblock  %}
